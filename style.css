@@ -96,16 +96,6 @@ p {
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0 10px 25px rgba(255, 0, 85, 0.4);
 }
-a {
-    color: #ffcc00; /* яскравий золотий */
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-a:hover {
-    color: #00ffd5; /* неоновий бірюзовий */
-    text-shadow: 0 0 6px rgba(0, 255, 213, 0.6);
-}
 /* ================= CARDS ================= */
 
 .card {
@@ -162,15 +152,17 @@ a:hover {
 
 /* ================= RESPONSIVE ================= */
 
+/* ================= RESPONSIVE ================= */
+
 @media (max-width: 600px) {
     .card {
         max-width: 700px;
         margin: 20px auto;
-    
+
         background: rgba(255, 255, 255, 0.05);
         padding: 20px;
         border-radius: 15px;
-    
+
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
         border: 1px solid rgba(255, 0, 85, 0.2);
     }
@@ -180,7 +172,7 @@ a:hover {
         height: 170px;
         margin: 0 auto 15px;
         border-radius: 50%;
-    
+
         background: linear-gradient(45deg,
             #ff0055,
             #00ffd5,
@@ -191,9 +183,9 @@ a:hover {
         display: flex;
         align-items: center;
         justify-content: center;
-    
+
         animation: rotateBorder 4s linear infinite;
-        }
+    }
 
     .photo {
         width: 120px;
@@ -204,4 +196,22 @@ a:hover {
         display: block;
         margin: 8px auto;
     }
+}
+
+/* ================= LINKS (ПОЗА MEDIA) ================= */
+
+a {
+    color: #ffd000;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.25s ease;
+}
+
+a:hover {
+    color: #00ffd5;
+    text-shadow: 0 0 8px rgba(0, 255, 213, 0.8);
+}
+
+a:active {
+    transform: scale(0.97);
 }
